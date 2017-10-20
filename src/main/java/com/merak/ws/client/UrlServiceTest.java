@@ -6,9 +6,9 @@ import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 
 public class UrlServiceTest {
-	public static void main(String[] args) {
-		cl2();
-	}
+//	 public static void main(String[] args) {
+//	 cl2();
+//	 }
 
 	public static void cl2() {
 		JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();

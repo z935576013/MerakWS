@@ -1,0 +1,3 @@
+FROM java
+ADD ws-0.0.1-SNAPSHOT.jar ws.jar
+EXPOSE 8002
