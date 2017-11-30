@@ -13,7 +13,7 @@ public class UrlServiceTest {
 	public static void cl2() {
 		JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();
 
-		Client client = dcf.createClient("http://localhost:8002/services/ProposalResponseService?wsdl");
+		Client client = dcf.createClient("https://www.merak.com/ws/services/ProposalResponseService?wsdl");
 		// Client client =
 		// dcf.createClient("http://119.254.98.166:8002/services/ProposalResponseService?wsdl");
 		client.getInInterceptors().add(new LoggingInInterceptor());
