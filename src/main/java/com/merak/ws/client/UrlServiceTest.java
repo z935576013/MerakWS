@@ -6,16 +6,17 @@ import org.apache.cxf.interceptor.LoggingOutInterceptor;
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 
 public class UrlServiceTest {
-//	 public static void main(String[] args) {
-//	 cl2();
-//	 }
+//	public static void main(String[] args) {
+//		cl2();
+//	}
 
 	public static void cl2() {
+		String url = "https://www.merak.com/ws/services/ProposalResponseService?wsdl";
+		 url =
+		 "http://localhost:8002/ws/services/ProposalResponseService?wsdl";
 		JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();
 
-		Client client = dcf.createClient("https://www.merak.com/ws/services/ProposalResponseService?wsdl");
-		// Client client =
-		// dcf.createClient("http://119.254.98.166:8002/services/ProposalResponseService?wsdl");
+		Client client = dcf.createClient(url);
 		client.getInInterceptors().add(new LoggingInInterceptor());
 		client.getOutInterceptors().add(new LoggingOutInterceptor());
 
