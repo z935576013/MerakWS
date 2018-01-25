@@ -1,5 +1,6 @@
 package com.merak.ws;
 
+import com.merak.ws.dto.Request;
 import com.merak.ws.dto.SetProposalResponseResponse;
 import com.merak.ws.dto.SetProposalResponseResult;
 import javax.jws.WebService;
@@ -14,7 +15,7 @@ public class ProposalResponseServiceImpl implements ProposalResponseService {
 	@Autowired
 	WsConfig wsConfig;
 
-	public SetProposalResponseResponse SetProposalResponse() {
+	public SetProposalResponseResponse SetProposalResponse(Request request) {
 		SetProposalResponseResponse response = new SetProposalResponseResponse();
 		SetProposalResponseResult result = new SetProposalResponseResult();
 		result.setResponseURL(wsConfig.getResponseURL());
